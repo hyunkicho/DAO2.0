@@ -1,4 +1,4 @@
-const arbDaoTxT=
+const arbDaoTxT: String=
 `
 Arbitrum
 
