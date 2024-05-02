@@ -36,10 +36,10 @@ describe('Start Example DaoLLMCheck test', async () => {
         );
 
         const llmData = await llmManger.checkLLM(proposalId);
-        expect(llmData[0].toString()).to.equal(aiPositiveRatio.toString());
+        expect(llmData[0].toString()).to.equal(`${aiPositiveRatio}`);
         expect(llmData[1]).to.be.equal(true);
         expect(llmData[2]).to.equal(evidenceURL);
-        expect(llmData[0]).to.equal(hash);
+        expect(llmData[3]).to.equal(hash);
 
         console.log("llmData >>", llmData);
     });
